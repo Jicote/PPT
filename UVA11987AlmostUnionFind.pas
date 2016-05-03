@@ -12,6 +12,8 @@ begin
        readln(n,m);
        for i:=1 to n do
        begin
+       //En lugar de hacer que el padre  de i sea i, se inventan los pader i+n, 
+       //de sea forma ningún vértice de 1 a n estarán relacionados entre sí.
           papa[i]:=i+n;
           papa[i+n]:=i+n;
           cant[i+n]:=1;
